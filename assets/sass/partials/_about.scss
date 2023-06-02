@@ -1,0 +1,39 @@
+.grid-about {
+    padding-top: 0px;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+
+        .cta {
+            display: none;
+        }
+    }
+
+    article {
+        padding: 24px 24px 124px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .article-text {
+            gap: 28px;
+        }
+
+        .skills, .contacts {
+            gap: 12px;
+        }
+
+    }
+
+    & ~ footer {
+        display: none;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}

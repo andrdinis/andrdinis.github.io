@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $secondary-color;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+    
+main {
+    padding-top: 68px;
+}

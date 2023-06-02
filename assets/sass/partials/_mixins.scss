@@ -1,0 +1,62 @@
+p, h1, h2, h3, h4, h5, img {
+    color: $text-color-1;
+}
+
+@mixin fontMain {
+	font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",  "Segoe UI Symbol";
+    letter-spacing: -0.02em;
+    line-height: 130%;
+    color: $text-color-1;
+}
+
+@mixin fontFooter {
+	font-size: rem(14px);
+    font-weight: 350;
+    color: $text-color-footer;
+}
+
+@mixin fontDetail {
+	font-size: rem(16px);
+    font-weight: 350;
+    letter-spacing: -0.03em;
+    color: $text-color-detail;
+}
+
+@mixin fontParagraph2 {
+	font-size: rem(17px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 145%;
+}
+
+p {
+    @include fontMain;
+	font-size: rem(20px);
+    font-weight: 350;
+    line-height: 135%;
+}
+
+@mixin fontHeading5 {
+	font-size: rem(20px);
+    font-weight: 500;
+}
+
+@mixin fontHeading4 {
+	font-size: rem(24px);
+    font-weight: 450;
+}
+
+@mixin fontHeading3 {
+	font-size: rem(28px);
+    font-weight: 400;
+}
+
+@mixin fontHeading2 {
+	font-size: rem(32px);
+    font-weight: 500;
+}
+
+@mixin fontHeading1 {
+	font-size: rem(38px);
+    font-weight: 350;
+}

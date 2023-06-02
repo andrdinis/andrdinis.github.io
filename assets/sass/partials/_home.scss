@@ -1,0 +1,136 @@
+.grid-index{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    justify-items: center;
+    overflow: hidden;
+    width: auto;
+    justify-items: start;
+
+    h1 {
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 1;
+
+        @include fontMain;
+        @include fontHeading1;
+        overflow-wrap: normal;
+        padding-bottom: 56px;
+        padding-top: 56px;
+
+        .font_alt {
+            font-weight: 500;
+        }
+    }
+
+    .widgets {
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 2;
+        padding-bottom: 96px;
+        height: 463px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+
+        div {
+            padding: 20px;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.widget_title {
+    @include fontMain;
+    @include fontHeading4;
+    font-size: rem(22pxs);
+
+    &:first-letter{
+        text-transform: capitalize
+    }
+}
+
+.widget_link {
+    @include fontMain;
+    @include fontDetail;
+    color: $text-color-1;
+
+    &:first-letter{
+        text-transform: capitalize
+    }
+}
+
+.widget_faculty {
+    background-color: $accent-color-1;
+
+    grid-area: 1 / 1 / 3 / 3;
+
+    p {
+        color: $text-color-2;
+    }
+}
+
+.widget_explore {
+    background-color: $primary-color;
+
+    grid-area: 1 / 3 / 4 / 5;
+}
+
+.widget_farfetch {
+    background-color: $accent-color-2;
+
+    grid-area: 3 / 1 / 6 / 3;
+}
+
+.widget_slotdev {
+    background-color: $accent-color-3;
+
+    grid-area: 4 / 3 / 6 / 5;
+
+    p {
+        color: $text-color-2;
+    }
+}
+
+.section_intro {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 3;
+    padding-bottom: 72px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .intro {
+        @include fontHeading4;
+    }
+
+    .intro_link {
+        font-size: rem(16px);
+        font-weight: 450;
+        color: $text-color-1;
+    }
+}
+
+.carousel {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 4;
+    padding-bottom: 80px;
+}
