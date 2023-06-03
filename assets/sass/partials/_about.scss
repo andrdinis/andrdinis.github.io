@@ -11,10 +11,21 @@
     }
 
     article {
-        padding: 24px 24px 124px;
+        padding: 24px 24px 112px;
         display: flex;
         flex-direction: column;
         gap: 40px;
+
+        h1 {
+            @include fontMain;
+            @include fontHeading3;
+        }
+
+        h2 {
+            @include fontMain;
+            @include fontHeading5;
+            font-weight: 450;
+        }
 
         .article-text {
             gap: 28px;
@@ -33,7 +44,124 @@
     div {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
     }
 
+    .skills {
+
+        .label_container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        p {
+            width: fit-content;
+            padding: 3px 10px;
+            white-space: nowrap;
+
+            background-color: $mix-mode-1;
+            border-radius: 7px;
+
+            @include fontParagraph2;
+            text-decoration: none;
+            color: $text-color-1;
+            font-weight: 400;
+            text-transform: capitalize
+        }
+    }
+
+    .label_container {
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: $primary-color;
+            box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .linkedin {
+            width: 40px;
+            height: 39px;
+
+            img {
+                width: 20px;
+            }
+        }
+
+        .behance {
+            width: 40px;
+            height: 39px;
+
+            img {
+                width: 24.24px;
+                height: 15.99px;
+            }
+        }
+
+        .email {
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 12px;
+            gap: 8px;
+            height: 39px;
+
+            border: 1.6px solid $neutral-1;
+            background-color: transparent;
+            border-radius: 8px;
+        
+            @include fontMain;
+            font-weight: 550;
+        }
+
+    }
+}
+
+.mobile_cta {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    gap: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    bottom: 24px;
+
+
+    a {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 12px;
+        width: 50%;
+
+        background: $primary-color;
+        box-shadow: 0px 4px 24px $secondary-color;
+
+        border-radius: 8px;
+
+        @include fontMain;
+        font-weight: 550;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+    }
 }

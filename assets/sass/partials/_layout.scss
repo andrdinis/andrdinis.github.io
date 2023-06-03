@@ -25,3 +25,7 @@ body {
 main {
     padding-top: 68px;
 }
+
+a {
+    @include fontMain
+}

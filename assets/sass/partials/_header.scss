@@ -18,7 +18,8 @@ header {
     }
 
     a {
-         text-decoration: none;
+        z-index: 3;
+        text-decoration: none;
          
     }
 
@@ -30,6 +31,7 @@ header {
 }
 
 button {
+    z-index: 3;
     padding-top: 4px;
     padding-right: 7px;
     background: transparent;
@@ -54,7 +56,7 @@ nav {
             left: 0px;
             background: $neutral-1;
             top: 88px;
-            z-index: 2;
+            z-index: 4;
             justify-content: center;
             width: calc(100% - 100px);
             margin-left: 24px;
@@ -79,7 +81,7 @@ nav {
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -1;
+    z-index: 2;
     }
 }
 
@@ -93,12 +95,17 @@ nav {
     a {
         @include fontHeading5;
         color: $text-color-2;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
     }
 
     li {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
     }
