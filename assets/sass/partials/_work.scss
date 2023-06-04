@@ -54,6 +54,11 @@
         grid-template-columns: 1;
         grid-template-rows: auto;
         row-gap: 40px;
+
+        @media (min-width: $small) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 24px;
+        }
     }
 
     .menu_item {

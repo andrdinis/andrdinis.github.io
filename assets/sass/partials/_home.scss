@@ -3,26 +3,39 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     column-gap: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
     justify-items: center;
     overflow: hidden;
-    width: auto;
+    width: 100vw;
     justify-items: start;
 
     h1 {
         grid-column-start: 1;
         grid-column-end: span 4;
         grid-row-start: 1;
+        padding-right: 24px;
+        padding-left: 24px;
 
         @include fontMain;
         @include fontHeading1;
         overflow-wrap: normal;
         padding-bottom: 56px;
         padding-top: 56px;
+        font-size: rem(28px);
 
         .font_alt {
             font-weight: 500;
+        }
+
+        @media (min-width: 375px) {
+            font-size: rem(32px);
+        }
+
+        @media (min-width: 425px) {
+            font-size: rem(38px);
+        }
+
+        @media (min-width: $medium) {
+            font-size: rem(42px);
         }
     }
 
@@ -31,7 +44,9 @@
         grid-column-end: span 4;
         grid-row-start: 2;
         padding-bottom: 96px;
-        height: 463px;
+        aspect-ratio: 366 / 463;
+        padding-right: 24px;
+        padding-left: 24px;
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -39,12 +54,37 @@
         column-gap: 16px;
         row-gap: 16px;
 
+        @media (min-width: 480px) {
+            aspect-ratio: 300 / 250;  
+        }
+
+        @media (min-width: $medium) {
+            aspect-ratio: initial;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            column-gap: 24px;
+            box-sizing: content-box;
+            width: 100vw;
+            overflow: scroll;
+            padding-bottom: 0px;
+            scroll-snap-type: x mandatory;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
         a {
             padding: 20px;
             border-radius: 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+        @media (min-width: $medium) {
+            height: 200px;
+            aspect-ratio: 302 / 240;
+        }
         }
     }
 }
@@ -52,10 +92,21 @@
 .widget_title {
     @include fontMain;
     @include fontHeading4;
-    font-size: rem(22pxs);
+    font-size: rem(17px);
 
     &:first-letter{
         text-transform: capitalize
+    }
+
+    @media (min-width: 375px) {
+        font-size: rem(22px);
+        
+    }
+
+    @media (min-width: $medium) {
+        font-size: rem(24px);
+        font-weight: 500;
+        
     }
 }
 
@@ -63,9 +114,20 @@
     @include fontMain;
     @include fontDetail;
     color: $text-color-1;
+    font-size: rem(14px);
 
     &:first-letter{
         text-transform: capitalize
+    }
+
+    @media (min-width: 375px) {
+        font-size: rem(16px);
+        
+    }
+
+    @media (min-width: $medium) {
+        font-size: rem(18px);
+        
     }
 }
 
@@ -77,18 +139,30 @@
     p {
         color: $text-color-2;
     }
+
+    @media (min-width: $medium) {
+    grid-area: 1 / 2 / 2 / 3;
+    }
 }
 
 .widget_explore {
     background-color: $primary-color;
 
     grid-area: 1 / 3 / 4 / 5;
+
+    @media (min-width: $medium) {
+        grid-area: 1 / 1 / 2 / 2;
+        }
 }
 
 .widget_farfetch {
     background-color: $accent-color-2;
 
     grid-area: 3 / 1 / 6 / 3;
+
+    @media (min-width: $medium) {
+        grid-area: 1 / 3 / 2 / 4;
+        }
 }
 
 .widget_slotdev {
@@ -99,6 +173,10 @@
     p {
         color: $text-color-2;
     }
+
+    @media (min-width: $medium) {
+        grid-area: 1 / 4 / 2 / 5;
+        }
 }
 
 .section_intro {
@@ -106,10 +184,17 @@
     grid-column-end: span 4;
     grid-row-start: 3;
     padding-bottom: 72px;
+    padding-right: 24px;
+    padding-left: 24px;
 
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+
+    @media (min-width: $medium) {
+        padding-top: 96px;
+    }
 
     div {
         display: flex;
@@ -133,4 +218,6 @@
     grid-column-end: span 4;
     grid-row-start: 4;
     padding-bottom: 80px;
+    padding-right: 24px;
+    padding-left: 24px;
 }

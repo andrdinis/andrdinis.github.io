@@ -10,11 +10,30 @@ header {
     align-items: center;
     background-color: $secondary-color;
     box-sizing: border-box;
-
+    
     .desktop-menu {
         list-style-type: none;
-        display: flex;
         display: none;
+
+        @media (min-width: $medium) {
+            display: flex;
+            gap: 10px;
+
+            li {
+                @include fontMain;
+                font-weight: 500;
+                font-size: 16px;
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 12px;
+                gap: 8px;
+                border-radius: 11px;
+            }
+        }
+
     }
 
     a {
