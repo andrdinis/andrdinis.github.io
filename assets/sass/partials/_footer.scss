@@ -5,6 +5,11 @@ footer {
     padding: 24px;
     background-color: $footer-color;
 
+    @media (min-width: $x-large) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
     nav {
 
         display: none;

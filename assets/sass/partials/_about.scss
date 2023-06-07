@@ -1,5 +1,23 @@
 .grid-about {
     padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $large) {
+        flex-direction: row;
+        padding-top: 84px;
+        gap: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 120px;
+    }
+
+    @media (min-width: $x-large) {
+        flex-direction: row;
+        gap: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 
     & > div {
         display: flex;
@@ -10,8 +28,55 @@
             padding-top: 84px;
         }
 
+        @media (min-width: $x-large) {
+            max-width: 32%;
+        }
+
         .cta {
             display: none;
+
+            @media (min-width: $large) {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                position: relative;
+                bottom: 36px;
+                right: 12px;
+                gap: 14px;
+
+                a {
+                    box-sizing: border-box;
+            
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 10px 12px;
+                    width: fit-content;
+            
+                    background: $primary-color;
+                    box-shadow: 0px 2px 9px rgba(28, 30, 42, 0.36);
+            
+                    border-radius: 8px;
+            
+                    @include fontMain;
+                    font-weight: 550;
+                    font-size: rem(20px);
+                    line-height: 140%;
+                    letter-spacing: -0.02em;
+
+                    white-space: nowrap;
+
+                }
+            }
+        }
+
+        @media (min-width: $large) {
+            padding-top: 0px;
+        }
+
+        @media (min-width: $x-large) {
+            width: 50%;
         }
 
     }
@@ -32,6 +97,20 @@
                 object-fit: cover;
                 object-position: 50%;
             }
+
+
+            @media (min-width: $large) {
+                margin: 0px;
+                outline: 2px solid rgba(255, 255, 255, 0.3);
+                outline-offset: -2px;
+                box-shadow: 0px 3px 20px #1C1E2A;
+            }
+
+            @media (min-width: $x-large) {
+                align-self: stretch;
+                width: 100%;
+                height: auto;
+            }
          } 
     }
 
@@ -44,26 +123,59 @@
         h1 {
             @include fontMain;
             @include fontHeading3;
+
+            @media (min-width: $x-large) {
+                font-size: rem(36px);
+            }
         }
 
         h2 {
             @include fontMain;
             @include fontHeading5;
             font-weight: 450;
+
+            @media (min-width: $x-large) {
+                font-size: rem(22px);
+            }
         }
 
         .article-text {
             gap: 28px;
+
+            @media (min-width: $x-large) {
+                width: 90%;
+            }
         }
 
         .skills, .contacts {
             gap: 12px;
+            @media (min-width: $large) {
+                gap: 16px;
+            }
+        }
+
+        @media (min-width: $large) {
+            padding: 0px;
+        }
+
+        @media (min-width: $x-large) {
+            width: 60%;
         }
 
     }
 
     & ~ footer {
         display: none;
+
+        @media (min-width: $large) {
+            display: flex;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 56px;
+        }
+        
     }
 
     div {
@@ -93,7 +205,18 @@
             text-decoration: none;
             color: $text-color-1;
             font-weight: 400;
-            text-transform: capitalize
+            text-transform: capitalize;
+
+            @include fontParagraph2;
+            text-decoration: none;
+            color: $text-color-1;
+            font-weight: 400;
+            text-transform: capitalize;
+
+            @media (min-width: $x-large) {
+                font-size: rem(22px);
+            }
+
         }
     }
 
@@ -118,8 +241,17 @@
             width: 40px;
             height: 39px;
 
+            @media (min-width: $x-large) {
+                width: 48px;
+                height: 47px;
+            }
+
             img {
                 width: 20px;
+
+                @media (min-width: $x-large) {
+                    width: 28px;
+                }
             }
         }
 
@@ -127,9 +259,19 @@
             width: 40px;
             height: 39px;
 
+            @media (min-width: $x-large) {
+                width: 48px;
+                height: 47px;
+            }
+
             img {
                 width: 24.24px;
                 height: 15.99px;
+
+                @media (min-width: $x-large) {
+                    width: 24.24+8px;
+                    height: 15.99+8px;
+                }
             }
         }
 
@@ -150,6 +292,11 @@
         
             @include fontMain;
             font-weight: 550;
+
+            @media (min-width: $x-large) {
+                font-size: rem(20px);
+                height: 47px;
+            }
         }
 
     }
@@ -166,6 +313,10 @@
     transform: translateX(-50%);
     width: calc(100% - 48px);
     bottom: 24px;
+
+    @media (min-width: $large) {
+        display: none;
+    }
 
 
     a {

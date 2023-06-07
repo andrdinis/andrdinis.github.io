@@ -1,5 +1,23 @@
 .grid-project {
     padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $large) {
+        flex-direction: row;
+        padding-top: 84px;
+        gap: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 120px;
+    }
+
+    @media (min-width: $x-large) {
+        flex-direction: row;
+        gap: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 
     & > div {
         display: flex;
@@ -8,6 +26,14 @@
         @media (min-width: $medium) {
             align-items: center;
             padding-top: 84px;
+        }
+
+        @media (min-width: $large) {
+            padding-top: 0px;
+        }
+
+        @media (min-width: $x-large) {
+            width: 50%;
         }
 
         img {
@@ -21,12 +47,56 @@
                 outline-offset: -1.2px;
                 box-shadow: 0px 3px 20px #1C1E2A;
                 height: 380px;
-                width: fit-content;
+            }
+
+            @media (min-width: $large) {
+                margin: 0px;
+                outline: 2px solid rgba(255, 255, 255, 0.3);
+                outline-offset: -2px;
+                box-shadow: 0px 3px 20px #1C1E2A;
+            }
+
+            @media (min-width: $x-large) {
+                align-self: stretch;
+                width: 100%;
+                height: auto;
             }
         }
 
         .cta {
             display: none;
+
+            @media (min-width: $large) {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                bottom: 36px;
+                right: 12px;
+
+                a {
+                    box-sizing: border-box;
+            
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 10px 12px;
+                    width: fit-content;
+            
+                    background: $primary-color;
+                    box-shadow: 0px 2px 9px rgba(28, 30, 42, 0.36);
+            
+                    border-radius: 8px;
+            
+                    @include fontMain;
+                    font-weight: 550;
+                    font-size: rem(20px);
+                    line-height: 140%;
+                    letter-spacing: -0.02em;
+
+                    white-space: nowrap;
+                }
+            }
         }
     }
 
@@ -39,18 +109,50 @@
         h1 {
             @include fontMain;
             @include fontHeading3;
+
+            @media (min-width: $x-large) {
+                font-size: rem(36px);
+            }
         }
 
         h2 {
             @include fontMain;
             @include fontHeading5;
             font-weight: 450;
+
+            @media (min-width: $x-large) {
+                font-size: rem(22px);
+            }
+        }
+
+        p {
+            @media (min-width: $x-large) {
+                width: 90%;
+            }
+        }
+
+        @media (min-width: $large) {
+            padding: 0px;
+        }
+
+        @media (min-width: $x-large) {
+            width: 50%;
         }
 
     }
 
     & ~ footer {
         display: none;
+
+        @media (min-width: $large) {
+            display: flex;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 56px;
+        }
+        
     }
 
     .label_container {
@@ -71,8 +173,14 @@
             text-decoration: none;
             color: $text-color-1;
             font-weight: 400;
-            text-transform: capitalize
+            text-transform: capitalize;
+
+            @media (min-width: $x-large) {
+                font-size: rem(22px);
+            }
+
         }
+        
     }
 
 }
@@ -89,7 +197,11 @@
     transform: translateX(-50%);
     width: calc(100% - 48px);
     bottom: 24px;
-    z-index: 0;
+
+    @media (min-width: $large) {
+        display: none;
+    }
+
 
     a {
         box-sizing: border-box;
@@ -136,4 +248,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @media (min-width: $large) {
+        gap: 16px;
+    }
 }

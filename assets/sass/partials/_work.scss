@@ -2,22 +2,33 @@
     display: flex;
     flex-direction: column;
     background-color: $secondary-color;
+    padding-right: 24px;
+    padding-left: 24px;
+    box-sizing: border-box;
+
+    @media (min-width: $x-large) {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
 
     h1 {
         @include fontHeading2;
         padding-top: 40px;
-        padding-left: 24px;
-        padding-right: 24px;
+
+        @media (min-width: $medium) {
+            font-size: rem(42px);
+        }
     }
 
     .chip-filter {
         display: flex;
         align-items: flex-start;
         gap: 8px;
-        height: 32px;
         padding-top: 20px;
         flex-wrap: nowrap;
         overflow: scroll;
+        margin-right: -24px;
+        margin-left: -24px;
         padding-left: 24px;
         padding-right: 24px;
         
@@ -42,12 +53,29 @@
             text-transform: capitalize
 
         }
+
+        @media (min-width: $medium) {
+
+            .chip {
+                font-size: rem(18px);
+            }
+
+        }
+
+        @media (min-width: $x-large) {
+
+            .chip {
+                font-size: rem(22px);
+            }
+
+            gap: 10px;
+
+        }
+
     }
 
     .menu {
         padding-top: 56px;
-        padding-left: 24px;
-        padding-right: 24px;
         padding-bottom: 72px;
 
         display: grid;
@@ -58,6 +86,14 @@
         @media (min-width: $small) {
             grid-template-columns: repeat(2, 1fr);
             column-gap: 24px;
+        }
+
+        @media (min-width: $large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: $x-large) {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 
@@ -79,11 +115,27 @@
 
         .menu_item_title {
             @include fontHeading5;
+
+            @media (min-width: $medium) {
+                font-size: rem(24px);
+            }
+
+            @media (min-width: $x-large) {
+                font-size: rem(22px);
+            }
         }
 
         .menu_item_detail {
             margin-top: -8px;
             @include fontDetail;
+
+            @media (min-width: $medium) {
+                font-size: rem(18px);
+            }
+
+            @media (min-width: $x-large) {
+                font-size: rem(18px);
+            }
         }
     }
 }
