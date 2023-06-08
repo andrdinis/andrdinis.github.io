@@ -84,7 +84,9 @@ header {
         }
 
         &.logo-alt {
-            background: rgba(28, 30, 42, 0.6);
+            @media (max-width: $medium) {
+                background: rgba(28, 30, 42, 0.6);
+            }
         }
     }
 }
