@@ -61,6 +61,7 @@
                 width: 100%;
                 height: auto;
             }
+
         }
 
         .cta {
@@ -95,6 +96,11 @@
                     letter-spacing: -0.02em;
 
                     white-space: nowrap;
+
+                    &:hover {
+                        background: #528FFA;
+                        transition: 0.3s;
+                    }
                 }
             }
         }

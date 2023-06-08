@@ -12,6 +12,14 @@ header {
     box-sizing: border-box;
     z-index: 10;
 
+    &.transparent-background {
+        background-color: rgba(28, 30, 42, 0);
+    }
+
+    @media (max-width: $medium) {
+
+    }
+
     @media (min-width: $medium) {
       backdrop-filter: blur(7px);
     }
@@ -32,7 +40,7 @@ header {
             display: flex;
             gap: 10px;
 
-            li {
+            a {
                 @include fontMain;
                 font-weight: 500;
                 font-size: rem(16px);
@@ -48,6 +56,10 @@ header {
                 @media (min-width: $large) {
                     font-size: rem(20px);
                 }
+
+                &.active {
+                    background: $primary-color;
+                }
             }
         }
 
@@ -59,10 +71,21 @@ header {
          
     }
 
-    .logo {
+    #logo {
 
         width: 44px;
         height: 44px; 
+        background: #3E74F7;
+        border-radius: 7px;
+        display: flex;
+
+        svg {
+            padding: 9.9px 9.9px 11px;
+        }
+
+        &.logo-alt {
+            background: rgba(28, 30, 42, 0.6);
+        }
     }
 }
 
@@ -77,6 +100,20 @@ button {
     @media (min-width: $medium) {
         display: none;
     }
+
+    svg {
+        stroke: $primary-color;
+
+        &.color-alt-1 {
+            stroke: $secondary-color;
+        }
+
+        &.color-alt-2 {
+            stroke: $neutral-1;
+        }
+    }
+
+
 }
 
 nav {

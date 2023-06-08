@@ -34,6 +34,9 @@ header {
           box-sizing: border-box;
   z-index: 10;
 }
+header.transparent-background {
+  background-color: rgba(28, 30, 42, 0);
+}
 @media (min-width: 768px) {
   header {
     -webkit-backdrop-filter: blur(7px);
@@ -60,7 +63,7 @@ header .desktop-menu {
     display: flex;
     gap: 10px;
   }
-  header .desktop-menu li {
+  header .desktop-menu a {
     font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     letter-spacing: -0.02em;
     line-height: 130%;
@@ -86,17 +89,33 @@ header .desktop-menu {
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
-  header .desktop-menu li {
+  header .desktop-menu a {
     font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  header .desktop-menu a.active {
+    background: #3E74F7;
   }
 }
 header a {
   z-index: 3;
   text-decoration: none;
 }
-header .logo {
+header #logo {
   width: 44px;
   height: 44px;
+  background: #3E74F7;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header #logo svg {
+  padding: 9.9px 9.9px 11px;
+}
+header #logo.logo-alt {
+  background: rgba(28, 30, 42, 0.6);
 }
 
 button {
@@ -111,6 +130,15 @@ button {
   button {
     display: none;
   }
+}
+button svg {
+  stroke: #3E74F7;
+}
+button svg.color-alt-1 {
+  stroke: #1C1E2A;
+}
+button svg.color-alt-2 {
+  stroke: #EDEDF2;
 }
 
 nav #mobile-nav {
@@ -1018,6 +1046,11 @@ a {
     letter-spacing: -0.02em;
     white-space: nowrap;
   }
+  .grid-about > div .cta a:hover {
+    background: #528FFA;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
 }
 @media (min-width: 1024px) {
   .grid-about > div {
@@ -1225,6 +1258,11 @@ a {
   -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+}
+.grid-about .label_container a:hover {
+  background: #528FFA;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .grid-about .label_container .linkedin {
   width: 40px;
@@ -1495,6 +1533,11 @@ a {
     line-height: 140%;
     letter-spacing: -0.02em;
     white-space: nowrap;
+  }
+  .grid-project > div .cta a:hover {
+    background: #528FFA;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 .grid-project article {
