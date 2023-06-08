@@ -19,7 +19,7 @@
         padding-right: 80px;
     }
 
-    & > div {
+    &>div {
         display: flex;
         flex-direction: column;
 
@@ -77,18 +77,18 @@
 
                 a {
                     box-sizing: border-box;
-            
+
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     padding: 10px 12px;
                     width: fit-content;
-            
+
                     background: $primary-color;
                     box-shadow: 0px 2px 9px rgba(28, 30, 42, 0.36);
-            
+
                     border-radius: 8px;
-            
+
                     @include fontMain;
                     font-weight: 550;
                     font-size: rem(20px);
@@ -147,7 +147,7 @@
 
     }
 
-    & ~ footer {
+    &~footer {
         display: none;
 
         @media (min-width: $large) {
@@ -158,7 +158,7 @@
             box-sizing: border-box;
             margin-top: 56px;
         }
-        
+
     }
 
     .label_container {
@@ -186,7 +186,37 @@
             }
 
         }
-        
+
+        .label_amote {
+            background-color: $mix-mode-5;
+            color: $chip-text-5;
+        }
+
+        .label_desterro {
+            background-color: $mix-mode-7;
+            color: $chip-text-7;
+        }
+
+        .label_faculty {
+            background-color: $mix-mode-3;
+            color: $chip-text-3;
+        }
+
+        .label_farfetch {
+            background-color: $mix-mode-2;
+            color: $chip-text-2;
+        }
+
+        .label_inferno {
+            background-color: $mix-mode-6;
+            color: $chip-text-6;
+        }
+
+        .label_slotdev {
+            background-color: $mix-mode-4;
+            color: $chip-text-4;
+        }
+
     }
 
 }

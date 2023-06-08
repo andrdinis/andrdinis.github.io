@@ -1645,6 +1645,30 @@ a {
     font-size: 1.375rem;
   }
 }
+.grid-project .label_container .label_amote {
+  background-color: #332E32;
+  color: #FFBF7D;
+}
+.grid-project .label_container .label_desterro {
+  background-color: #322F32;
+  color: #ECC06A;
+}
+.grid-project .label_container .label_faculty {
+  background-color: #322C3F;
+  color: #F7ACFF;
+}
+.grid-project .label_container .label_farfetch {
+  background-color: #2D2C3F;
+  color: #C8A7FF;
+}
+.grid-project .label_container .label_inferno {
+  background-color: #272F3F;
+  color: #8CCDFF;
+}
+.grid-project .label_container .label_slotdev {
+  background-color: #293437;
+  color: #9AF8AA;
+}
 
 #share_cta {
   display: -webkit-box;
