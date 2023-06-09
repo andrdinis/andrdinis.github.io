@@ -1047,8 +1047,8 @@ a {
   transition: 0.3s;
 }
 .grid-work .chip-filter .chip:hover {
-  outline: 1.8px solid rgba(255, 255, 255, 0.5);
-  outline-offset: -1.8px;
+  outline: 1.2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -1.2px;
 }
 @media (min-width: 768px) {
   .grid-work .chip-filter .chip {
