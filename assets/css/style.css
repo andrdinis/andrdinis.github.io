@@ -1170,6 +1170,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 88px;
 }
 @media (min-width: 1024px) {
   .grid-about {
@@ -1627,6 +1628,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 88px;
 }
 @media (min-width: 1024px) {
   .grid-project {
