@@ -98,6 +98,13 @@ header .desktop-menu {
     background: #3E74F7;
   }
 }
+@media (min-width: 768px) {
+  header .desktop-menu a:hover {
+    background: #353951;
+    -webkit-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+  }
+}
 header a {
   z-index: 3;
   text-decoration: none;
@@ -118,6 +125,12 @@ header #logo svg {
   header #logo.logo-alt {
     background: rgba(28, 30, 42, 0.6);
   }
+}
+header #logo:hover {
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 button {
@@ -543,6 +556,12 @@ a {
     height: 260px;
   }
 }
+.grid-index .widgets .widget:hover {
+  -webkit-box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.4);
+  outline: 2.2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -2.2px;
+}
 .grid-index .widgets .faculty {
   background-color: #F09CF9;
   -ms-grid-row: 1;
@@ -752,6 +771,9 @@ a {
     font-size: 1.125rem;
   }
 }
+.grid-index .section_intro .intro_link:hover {
+  text-decoration: underline;
+}
 .grid-index .carousel {
   padding-bottom: 80px;
   display: -webkit-box;
@@ -888,6 +910,12 @@ a {
   width: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.grid-index .carousel img:hover {
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
 }
 .grid-index .carousel .up {
   width: 200px;
@@ -1457,11 +1485,11 @@ a {
   }
 }
 .grid-about .label_container .linkedin img {
-  width: 20px;
+  width: 18px;
 }
 @media (min-width: 1230px) {
   .grid-about .label_container .linkedin img {
-    width: 28px;
+    width: 23px;
   }
 }
 .grid-about .label_container .behance {
@@ -1517,6 +1545,11 @@ a {
     font-size: 1.25rem;
     height: 47px;
   }
+}
+.grid-about .label_container .email:hover {
+  background: #353951;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .mobile_cta {

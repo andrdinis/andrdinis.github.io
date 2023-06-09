@@ -258,10 +258,10 @@
             }
 
             img {
-                width: 20px;
+                width: 18px;
 
                 @media (min-width: $x-large) {
-                    width: 28px;
+                    width: 23px;
                 }
             }
         }
@@ -307,6 +307,11 @@
             @media (min-width: $x-large) {
                 font-size: rem(20px);
                 height: 47px;
+            }
+
+            &:hover {
+                background: $mix-mode-1;
+                transition: 0.3s;
             }
         }
 
