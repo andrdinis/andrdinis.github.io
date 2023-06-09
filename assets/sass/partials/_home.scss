@@ -295,6 +295,137 @@
     .carousel {
         padding-bottom: 80px;
         display: flex;
+        margin-right: -24px;
+        margin-left: -24px;
+        padding-right: 24px;
+        padding-left: 24px;
+        overflow: hidden;
+
+        @media (min-width: $x-large) {
+            margin-right: -80px;
+            margin-left: -80px;
+            padding-right: 80px;
+            padding-left: 80px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+            scroll-behavior: smooth;
+            scroll-snap-type: x xmandatory;
+        }
+
+        .carousel_items {
+            display: flex;
+            gap: 28px;
+            align-items: flex-start;
+            animation: scroll 190s ease-in-out infinite;
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                50% {
+                    transform: translateX(-2415px);
+                }
+
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+            @media (min-width: $medium) {
+                gap: 32px;
+
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(-3120px);
+                    }
+
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+            }
+
+            @media (min-width: $x-large) {
+
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(-2400px);
+                    }
+
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+
+        img {
+            border-radius: 7px;
+            outline: 1.2px solid rgba(255, 255, 255, 0.3);
+            outline-offset: -1.2px;
+            height: 380px;
+            width: fit-content;
+            object-fit: cover;
+        }
+
+        .up {
+            width: 200px;
+            height: 320px;
+
+            @media (min-width: $medium) {
+                width: 280px;
+                height: 400px;
+            }
+
+            @media (min-width: $x-large) {
+                width: 320px;
+                height: 440px;
+            }
+        }
+
+        .square {
+            aspect-ratio: 1 / 1;
+            width: 200px;
+            height: 200px;
+
+            @media (min-width: $medium) {
+                width: 280px;
+                height: 280px;
+            }
+
+            @media (min-width: $x-large) {
+                width: 320px;
+                height: 320px;
+            }
+        }
+
+        .down {
+            aspect-ratio: 420 / 280;
+            height: 200px;
+
+            @media (min-width: $medium) {
+                height: 280px;
+            }
+
+            @media (min-width: $x-large) {
+                height: 320px;
+            }
+        }
+
     }
 
 }

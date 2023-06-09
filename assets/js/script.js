@@ -27,13 +27,13 @@ for (var i = 0; i < anchor.length; i++) {
     if (window.location.href.indexOf("p_faculty") > -1) {
         header.classList.add("transparent-background");
         logo.classList.add("logo-alt");
-        menu.classList.add("color-alt-1");
+        menu.classList.add("color-alt-2");
         document.title = "Rethinking the Fine Arts Faculty of Lisbon website — André Dinis";
 	}
     if (window.location.href.indexOf("p_amote") > -1) {
         header.classList.add("transparent-background");
         logo.classList.add("logo-alt");
-        menu.classList.add("color-alt-1");
+        menu.classList.add("color-alt-2");
         document.title = "Amo-te de Morte — André Dinis";
 	}
     if (window.location.href.indexOf("p_base") > -1) {
@@ -81,7 +81,7 @@ for (var i = 0; i < anchor.length; i++) {
     if (window.location.href.indexOf("p_render") > -1) {
         header.classList.add("transparent-background");
         logo.classList.add("logo-alt");
-        menu.classList.add("color-alt-1");
+        menu.classList.add("color-alt-2");
         document.title = "Concept Art Experiments — André Dinis";
 	}
     if (window.location.href.indexOf("p_slotdev") > -1) {

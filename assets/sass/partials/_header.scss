@@ -16,12 +16,10 @@ header {
         background-color: rgba(28, 30, 42, 0);
     }
 
-    @media (max-width: $medium) {
-
-    }
+    @media (max-width: $medium) {}
 
     @media (min-width: $medium) {
-      backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
     }
 
     @media (min-width: $x-large) {
@@ -31,7 +29,7 @@ header {
         background-color: rgba(28, 30, 42, 0.90);
         backdrop-filter: blur(7px);
     }
-    
+
     .desktop-menu {
         list-style-type: none;
         display: none;
@@ -44,7 +42,7 @@ header {
                 @include fontMain;
                 font-weight: 500;
                 font-size: rem(16px);
-                
+
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -68,13 +66,13 @@ header {
     a {
         z-index: 3;
         text-decoration: none;
-         
+
     }
 
     #logo {
 
         width: 44px;
-        height: 44px; 
+        height: 44px;
         background: #3E74F7;
         border-radius: 7px;
         display: flex;
@@ -107,7 +105,7 @@ button {
         stroke: $primary-color;
 
         &.color-alt-1 {
-            stroke: $secondary-color;
+            stroke: $primary-color;
         }
 
         &.color-alt-2 {
@@ -147,16 +145,16 @@ nav {
 
     display: none;
 
-    &.blur{
-    display: block;
-    background: rgba(28, 30, 42, 0.01);
-    backdrop-filter: blur(50px);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 2;
+    &.blur {
+        display: block;
+        background: rgba(28, 30, 42, 0.01);
+        backdrop-filter: blur(50px);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
     }
 }
 
@@ -170,7 +168,7 @@ nav {
     a {
         @include fontHeading5;
         color: $text-color-2;
-        
+
         display: flex;
         justify-content: space-between;
         align-items: center;
