@@ -92,3 +92,220 @@ for (var i = 0; i < anchor.length; i++) {
 	}
 
 }
+
+//filter chips
+var btnFilterUx = document.querySelector(".btn--filterUx")
+
+function filterUx() {
+    var active = document.querySelector(".btn--filterUx");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".base");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".render");
+    hide.classList.toggle("hide");
+}
+
+btnFilterUx.addEventListener("click", filterUx);
+
+//
+var btnFilterUi = document.querySelector(".btn--filterUi")
+
+function filterUi() {
+    var active = document.querySelector(".btn--filterUi");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".base");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".render");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".nidus");
+    hide.classList.toggle("hide");
+}
+
+btnFilterUi.addEventListener("click", filterUi);
+
+//
+var btnFilterCinema = document.querySelector(".btn--filterCinema")
+
+function filterCinema() {
+    var active = document.querySelector(".btn--filterCinema");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".farfetch");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".faculty");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".slotdev");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".render");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".nidus");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".base");
+    hide.classList.toggle("hide");
+}
+
+btnFilterCinema.addEventListener("click", filterCinema);
+
+//
+var btnFilterPhoto = document.querySelector(".btn--filterPhoto")
+
+function filterPhoto() {
+    var active = document.querySelector(".btn--filterPhoto");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".farfetch");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".faculty");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".slotdev");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".render");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".nidus");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".base");
+    hide.classList.toggle("hide");
+}
+
+btnFilterPhoto.addEventListener("click", filterPhoto);
+
+
+//
+var btnFilterMultimedia = document.querySelector(".btn--filterMultimedia")
+
+function filterMultimedia() {
+    var active = document.querySelector(".btn--filterMultimedia");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".farfetch");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".faculty");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".slotdev");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".base");
+    hide.classList.toggle("hide");
+}
+
+btnFilterMultimedia.addEventListener("click", filterMultimedia);
+
+//
+var btnFilterResearch = document.querySelector(".btn--filterResearch")
+
+function filterResearch() {
+    var active = document.querySelector(".btn--filterResearch");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".render");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+}
+
+btnFilterResearch.addEventListener("click", filterResearch);
+
+//
+var btnFilterIndustrial = document.querySelector(".btn--filterIndustrial")
+
+function filterIndustrial() {
+    var active = document.querySelector(".btn--filterIndustrial");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".render");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".farfetch");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".faculty");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".slotdev");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".nidus");
+    hide.classList.toggle("hide");
+    
+}
+
+btnFilterIndustrial.addEventListener("click", filterIndustrial);
+
+//
+var btnFilter3d = document.querySelector(".btn--filter3d")
+
+function filter3d() {
+    var active = document.querySelector(".btn--filter3d");
+    active.classList.toggle("chip-active");
+    var hide = document.querySelector(".amote");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".desterro");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".corona");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".inferno");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".base");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".epilogo");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".farfetch");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".faculty");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".slotdev");
+    hide.classList.toggle("hide");
+    var hide = document.querySelector(".nidus");
+    hide.classList.toggle("hide");
+    
+}
+
+btnFilter3d.addEventListener("click", filter3d);

@@ -4,6 +4,7 @@ footer {
     align-items: center;
     padding: 24px;
     background-color: $footer-color;
+    margin-top: auto;
 
     @media (min-width: $x-large) {
         padding-left: 80px;
@@ -18,12 +19,12 @@ footer {
 
     a {
         display: flex;
-        
+
     }
 
     p {
         @include fontFooter;
-        
+
     }
 
 }

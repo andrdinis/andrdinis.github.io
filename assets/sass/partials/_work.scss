@@ -54,6 +54,16 @@
             text-transform: capitalize
         }
 
+        .chip-active {
+            background-color: $primary-color;
+            transition: 0.3s;
+        }
+
+        .chip:hover {
+            outline: 1.8px solid rgba(255, 255, 255, 0.5);
+            outline-offset: -1.8px;
+        }
+
         @media (min-width: $medium) {
 
             .chip {
@@ -137,5 +147,9 @@
                 font-size: rem(18px);
             }
         }
+    }
+
+    .hide {
+        display: none;
     }
 }
